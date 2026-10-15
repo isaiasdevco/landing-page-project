@@ -172,6 +172,33 @@ test("primary anchors reach their sections below the sticky header", async () =>
   await page.close();
 });
 
+test("active navigation follows testimonials when scrolling back from the footer", async () => {
+  const page = await openPage();
+  await page.locator('.primary-navigation a[href="#contact"]').click();
+  await page.waitForFunction(
+    () =>
+      document.querySelector('.primary-navigation [aria-current="location"]')
+        ?.hash === "#contact",
+  );
+  await page
+    .locator(".testimonials")
+    .evaluate((element) => window.scrollTo(0, element.offsetTop - 120));
+  await page.waitForFunction(
+    () =>
+      document.querySelector('.primary-navigation [aria-current="location"]')
+        ?.hash === "#about",
+    null,
+    { timeout: 2000 },
+  );
+  assert.equal(
+    await page
+      .locator('.primary-navigation [aria-current="location"]')
+      .getAttribute("href"),
+    "#about",
+  );
+  await page.close();
+});
+
 test("navigation and content remain usable without JavaScript", async () => {
   const page = await openPage({
     javaScriptEnabled: false,

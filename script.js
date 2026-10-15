@@ -64,12 +64,13 @@ function initSectionTracking() {
   const links = [
     ...document.querySelectorAll('.primary-navigation a[href^="#"]'),
   ];
-  // Work belongs to Services; testimonials keep the preceding About indicator.
+  // Secondary sections use their related primary navigation link.
   const navigationForSection = {
     home: "#home",
     services: "#services",
     work: "#services",
     about: "#about",
+    testimonials: "#about",
     contact: "#contact",
   };
 
