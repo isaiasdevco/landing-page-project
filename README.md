@@ -2,7 +2,7 @@
 
 A responsive landing page for a fictional independent digital studio, built with HTML, CSS, and vanilla JavaScript.
 
-The design combines warm neutrals, forest green, terracotta accents, local typography, and three illustrated brand concepts.
+The design combines ink blue, cobalt accents, warm white, and an apricot contact section with local typography and three illustrated brand concepts.
 
 ## Getting started
 
