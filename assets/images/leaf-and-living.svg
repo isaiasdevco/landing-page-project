@@ -1,0 +1,104 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1000"
+  height="720"
+  viewBox="0 0 1000 720"
+  fill="none"
+>
+  <rect width="1000" height="720" fill="#d6dca6" />
+  <path d="M42 76h916" stroke="#a5af79" />
+  <text
+    x="44"
+    y="50"
+    fill="#304f34"
+    font-family="Arial, sans-serif"
+    font-size="14"
+    letter-spacing="3"
+  >
+    LEAF &amp; LIVING
+  </text>
+  <text
+    x="956"
+    y="50"
+    text-anchor="end"
+    fill="#304f34"
+    font-family="Arial, sans-serif"
+    font-size="11"
+    letter-spacing="2"
+  >
+    A GREENER EVERYDAY
+  </text>
+  <g
+    fill="#304f34"
+    font-family="Georgia, serif"
+    font-size="104"
+    letter-spacing="-5"
+  >
+    <text x="54" y="240">Room</text>
+    <text x="54" y="342" font-style="italic">to grow.</text>
+  </g>
+  <text
+    x="60"
+    y="394"
+    fill="#456044"
+    font-family="Arial, sans-serif"
+    font-size="14"
+  >
+    A little nature. A little breathing space.
+  </text>
+  <path d="M60 435h183m-10-7 10 7-10 7" stroke="#304f34" stroke-width="1.5" />
+  <path d="M0 591 1000 553v167H0Z" fill="#c4cc95" />
+  <ellipse
+    cx="709"
+    cy="642"
+    rx="166"
+    ry="24"
+    fill="#889764"
+    fill-opacity=".35"
+  />
+  <g stroke="#3a5938" stroke-width="7" stroke-linecap="round">
+    <path
+      d="M711 519c-5-96 6-190 65-300M706 514c-6-84-41-193-112-253M711 507c43-102 95-147 142-160M710 475c-29-128-20-240 0-319"
+    />
+  </g>
+  <path d="M776 224c-55-93 23-141 91-127 25 75-8 132-91 127Z" fill="#456a3e" />
+  <path d="M710 195c-87-35-82-117-14-162 61 45 67 109 14 162Z" fill="#577a43" />
+  <path
+    d="M638 304c-101 8-145-65-115-138 81 2 126 47 115 138Z"
+    fill="#496c3b"
+  />
+  <path d="M723 373c-82-30-82-104-30-141 69 35 82 85 30 141Z" fill="#6d8c4f" />
+  <path
+    d="M804 387c-5-101 57-140 128-106 4 76-49 128-128 106Z"
+    fill="#4c733f"
+  />
+  <path d="M675 421c-73 36-151-1-157-71 83-26 145-10 157 71Z" fill="#648445" />
+  <g stroke="#a2b274" stroke-width="1.5">
+    <path
+      d="m782 210 63-89M709 180 699 62M626 291l-80-101M723 355l-26-98M816 375l91-73M659 416l-114-52"
+    />
+  </g>
+  <path d="M616 496h190l-24 133c-7 35-136 35-144 0Z" fill="#ba7552" />
+  <path d="M628 517h166l-7 26H634Z" fill="#a55e40" />
+  <ellipse cx="711" cy="496" rx="95" ry="20" fill="#cf916b" />
+  <ellipse cx="711" cy="493" rx="77" ry="12" fill="#674b32" />
+  <path
+    d="M657 551h1m12 0h1m12 0h1m12 0h1m12 0h1m12 0h1m12 0h1m12 0h1m12 0h1"
+    stroke="#d9a580"
+    stroke-width="2"
+  />
+  <text
+    x="44"
+    y="678"
+    fill="#304f34"
+    font-family="Arial, sans-serif"
+    font-size="11"
+    letter-spacing="2"
+  >
+    THOUGHTFULLY GROWN. HAPPILY AT HOME.
+  </text>
+  <g stroke="#456044" stroke-width="2" transform="translate(934 668)">
+    <circle r="18" />
+    <path d="M0-12v24M-12 0h24M-8-8 8 8M-8 8 8-8" />
+  </g>
+</svg>

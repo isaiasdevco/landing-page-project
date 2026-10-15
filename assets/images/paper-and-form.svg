@@ -1,0 +1,127 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1000"
+  height="720"
+  viewBox="0 0 1000 720"
+  fill="none"
+>
+  <rect width="1000" height="720" fill="#e9c2ae" />
+  <path d="M0 563 1000 437v283H0Z" fill="#dfb29c" />
+  <text
+    x="48"
+    y="54"
+    fill="#653a2b"
+    font-family="Arial, sans-serif"
+    font-size="13"
+    letter-spacing="3"
+  >
+    PAPER &amp; FORM
+  </text>
+  <text
+    x="952"
+    y="54"
+    fill="#653a2b"
+    font-family="Arial, sans-serif"
+    font-size="11"
+    text-anchor="end"
+    letter-spacing="2"
+  >
+    THINK ON PAPER.
+  </text>
+  <ellipse
+    cx="527"
+    cy="615"
+    rx="279"
+    ry="28"
+    fill="#a47c67"
+    fill-opacity=".18"
+  />
+  <g transform="translate(475 112) rotate(13 140 225)">
+    <rect x="3" y="9" width="270" height="442" rx="3" fill="#aa5539" />
+    <rect x="0" y="0" width="270" height="440" rx="3" fill="#a64f35" />
+    <path d="M15 0v440" stroke="#d48966" />
+    <path
+      d="M74 325c-23-62 101-92 110-229M113 265c-30-4-45-22-42-46 31-1 51 14 42 46ZM147 223c27-3 46-20 47-48-30-1-49 18-47 48ZM170 164c-28-4-44-24-40-47 25 4 43 20 40 47Z"
+      stroke="#e5b596"
+      stroke-width="2"
+    />
+    <text
+      x="139"
+      y="385"
+      text-anchor="middle"
+      fill="#f5dfc7"
+      font-family="Arial, sans-serif"
+      font-size="10"
+      letter-spacing="4"
+    >
+      COLLECT YOUR THOUGHTS
+    </text>
+  </g>
+  <g transform="translate(215 167) rotate(-12 165 230)">
+    <rect x="4" y="8" width="324" height="451" rx="3" fill="#cfbda1" />
+    <rect width="324" height="450" rx="3" fill="#f4ead5" />
+    <path d="M17 0v450" stroke="#d7c9ae" />
+    <text
+      x="46"
+      y="50"
+      fill="#704833"
+      font-family="Arial, sans-serif"
+      font-size="9"
+      letter-spacing="2"
+    >
+      A LITTLE SPACE FOR YOURSELF
+    </text>
+    <g
+      fill="#5f3e2c"
+      font-family="Georgia, serif"
+      font-size="48"
+      letter-spacing="-2"
+    >
+      <text x="45" y="128">Make room</text>
+      <text x="45" y="179">for the</text>
+      <text x="45" y="230" font-style="italic">little things.</text>
+    </g>
+    <g stroke="#a9583c" stroke-width="2">
+      <path d="M173 267v60m-30-30h60m-51-21 42 42m-42 0 42-42" />
+      <circle cx="173" cy="297" r="19" />
+    </g>
+    <path d="M45 369h234" stroke="#c3b294" />
+    <text
+      x="45"
+      y="397"
+      fill="#704833"
+      font-family="Arial, sans-serif"
+      font-size="11"
+      letter-spacing="2"
+    >
+      PAPER &amp; FORM
+    </text>
+    <text
+      x="277"
+      y="397"
+      text-anchor="end"
+      fill="#704833"
+      font-family="Arial, sans-serif"
+      font-size="9"
+    >
+      NO. 01
+    </text>
+  </g>
+  <g transform="translate(798 336) rotate(19)">
+    <rect width="10" height="245" fill="#5c4734" />
+    <path d="m0 245 5 22 5-22" fill="#e9d0ad" />
+    <path d="m3 258 2 9 2-9" fill="#352c26" />
+    <path d="M5 0v245" stroke="#8d6d4c" />
+  </g>
+  <text
+    x="48"
+    y="677"
+    fill="#653a2b"
+    font-family="Georgia, serif"
+    font-style="italic"
+    font-size="21"
+  >
+    Good ideas start somewhere.
+  </text>
+  <path d="M878 662h74m-12-7 12 7-12 7" stroke="#653a2b" stroke-width="1.5" />
+</svg>

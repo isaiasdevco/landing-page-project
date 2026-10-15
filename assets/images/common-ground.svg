@@ -1,0 +1,139 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="760"
+  height="820"
+  viewBox="0 0 760 820"
+  fill="none"
+>
+  <rect width="760" height="820" fill="#294838" />
+  <path d="M42 57h676" stroke="#72816d" />
+  <g
+    fill="#f8eed8"
+    font-family="Arial, sans-serif"
+    font-size="12"
+    letter-spacing="2"
+  >
+    <text x="42" y="38">COMMON GROUND</text>
+    <text x="604" y="38">EST. 2026</text>
+  </g>
+  <circle cx="596" cy="236" r="117" fill="#d98962" />
+  <g stroke="#294838" stroke-width="2">
+    <path
+      d="M532 233c35-35 87-35 123 0M536 250c32-27 81-27 113 0M547 267c26-19 58-19 84 0"
+    />
+    <path d="M588 99v-17m90 48 12-12m33 105h17" stroke="#9eaa8e" />
+  </g>
+  <text
+    x="52"
+    y="170"
+    fill="#f8eed8"
+    font-family="Georgia, serif"
+    font-size="86"
+    letter-spacing="-4"
+  >
+    Take a
+  </text>
+  <text
+    x="52"
+    y="255"
+    fill="#f8eed8"
+    font-family="Georgia, serif"
+    font-size="86"
+    font-style="italic"
+    letter-spacing="-4"
+  >
+    moment.
+  </text>
+  <text
+    x="57"
+    y="300"
+    fill="#cbd5bf"
+    font-family="Arial, sans-serif"
+    font-size="12"
+    letter-spacing="1.5"
+  >
+    GOOD COFFEE. BETTER COMPANY.
+  </text>
+  <path d="M0 650 760 604v216H0Z" fill="#203b2d" />
+  <ellipse
+    cx="347"
+    cy="707"
+    rx="199"
+    ry="30"
+    fill="#152c21"
+    fill-opacity=".5"
+  />
+  <g transform="translate(177 337) rotate(-9 135 180)">
+    <path d="M24 9h225l14 41 6 304-29 21H13L1 353l8-299Z" fill="#cb704d" />
+    <path d="m24 9 7 43 214 2 4-45Z" fill="#df946b" />
+    <path d="m13 351 237-3-10 27H13Z" fill="#ac583e" />
+    <path d="M22 65h222M32 22h205" stroke="#a9583d" stroke-width="2" />
+    <path d="M239 65v271M22 78l-4 255" stroke="#e69a72" stroke-width="2" />
+    <rect x="34" y="98" width="199" height="209" rx="98" fill="#f4e9cd" />
+    <g stroke="#294838" stroke-width="2">
+      <path d="M133 118v28m-14-14h28m-24-10 20 20m-20 0 20-20" />
+    </g>
+    <g fill="#294838" text-anchor="middle">
+      <text
+        x="133"
+        y="182"
+        font-family="Georgia, serif"
+        font-size="35"
+        letter-spacing="-1.4"
+      >
+        common
+      </text>
+      <text
+        x="133"
+        y="220"
+        font-family="Georgia, serif"
+        font-size="35"
+        letter-spacing="-1.4"
+      >
+        ground.
+      </text>
+      <text
+        x="133"
+        y="247"
+        font-family="Arial, sans-serif"
+        font-size="8"
+        letter-spacing="2"
+      >
+        A DAILY RITUAL
+      </text>
+      <path d="M110 266h46" stroke="#294838" />
+      <text x="133" y="283" font-family="Arial, sans-serif" font-size="9">
+        HOUSE BLEND / 250 G
+      </text>
+    </g>
+    <path d="M77 332h111" stroke="#a9583d" />
+  </g>
+  <ellipse cx="594" cy="700" rx="98" ry="19" fill="#152c21" fill-opacity=".5" />
+  <path d="M648 596c77-14 79 93 4 75" stroke="#e9dbbc" stroke-width="18" />
+  <path d="M521 587h135l-13 102c-3 23-105 23-108 0Z" fill="#f3e7c9" />
+  <ellipse cx="588.5" cy="587" rx="67.5" ry="18" fill="#d6c4a2" />
+  <ellipse cx="588.5" cy="588" rx="57" ry="12" fill="#593f2c" />
+  <path
+    d="M585 578c-9-17 15-22 6-41m22 43c-9-17 15-22 6-41"
+    stroke="#aebc9f"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+  <g fill="#294838" text-anchor="middle" font-family="Georgia, serif">
+    <text x="587" y="646" font-size="22">cg.</text>
+  </g>
+  <path d="M42 769h676" stroke="#72816d" />
+  <text
+    x="42"
+    y="795"
+    fill="#cbd5bf"
+    font-family="Arial, sans-serif"
+    font-size="10"
+    letter-spacing="1.5"
+  >
+    SLOW MORNINGS, WELL SPENT.
+  </text>
+  <g stroke="#e5ab82" stroke-width="2" transform="translate(692 790)">
+    <path d="M0-12v24M-12 0h24M-8-8 8 8M-8 8 8-8" />
+  </g>
+</svg>
