@@ -27,21 +27,17 @@
 :root {
   --paper: #f3efdf;
   --ink: #12232d;
-  --muted: #4e5c60;
-  --cobalt: #2945cc;
-  --cobalt-dark: #2036a6;
+  --surface: #1b3038;
+  --surface-hover: #213940;
+  --muted: #b6c5c7;
   --lime: #ddec8b;
-  --lavender: #d9dffc;
-  --peach: #f2ac86;
-  --line: #c6c8b9;
-  --line-dark: #45575e;
-  --on-dark: #f6f2e5;
-  --on-dark-muted: #c1cbd0;
+  --line: #3a5057;
+  --text: #f6f2e5;
   --display-font: "Instrument Serif", Georgia, serif;
   --body-font: "DM Sans", Arial, sans-serif;
   --container: 1360px;
   --gutter: clamp(20px, 4.5vw, 76px);
-  --section-space: clamp(72px, 7.5vw, 112px);
+  --section-space: clamp(64px, 6.5vw, 100px);
 }
 *,
 *::before,
@@ -55,7 +51,7 @@ html {
 body {
   margin: 0;
   background: var(--ink);
-  color: var(--ink);
+  color: var(--text);
   font-family: var(--body-font);
   font-size: 1rem;
   line-height: 1.65;
@@ -102,7 +98,7 @@ a {
   color: var(--ink);
 }
 :focus-visible {
-  outline: 2px solid var(--cobalt);
+  outline: 2px solid var(--lime);
   outline-offset: 6px;
 }
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -113,7 +109,19 @@ a {
   margin-inline: auto;
 }
 .section {
+  position: relative;
   padding-block: var(--section-space);
+}
+.section + .section::before,
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(var(--container), calc(100% - var(--gutter) * 2));
+  height: 1px;
+  background: var(--line);
+  transform: translateX(-50%);
 }
 .eyebrow,
 .small-label {
@@ -135,6 +143,7 @@ h2 {
   letter-spacing: -0.055em;
 }
 h2 em {
+  color: var(--lime);
   font-family: var(--display-font);
   font-size: 1.16em;
   font-weight: 400;
@@ -198,8 +207,8 @@ h2 em {
   top: 0;
   z-index: 20;
   background: var(--ink);
-  color: var(--on-dark);
-  border-bottom: 1px solid var(--line-dark);
+  color: var(--text);
+  border-bottom: 1px solid var(--line);
 }
 .site-header.menu-ready {
   position: sticky;
@@ -254,7 +263,7 @@ h2 em {
 .primary-navigation .nav-contact {
   margin-left: 8px;
   padding-left: 30px;
-  border-left: 1px solid var(--line-dark);
+  border-left: 1px solid var(--line);
 }
 .menu-toggle {
   display: none;
@@ -284,15 +293,9 @@ h2 em {
 .menu-toggle[aria-expanded="true"] .menu-icon span:last-child {
   transform: translateY(-3px) rotate(-45deg);
 }
-.site-header :focus-visible {
-  outline-color: var(--lime);
-}
-
 /* Cover: a typographic statement beside two layered project samples. */
 .hero {
   padding-top: clamp(38px, 4.8vw, 72px);
-  color: var(--on-dark);
-  background: var(--ink);
 }
 .hero-grid {
   display: grid;
@@ -309,7 +312,7 @@ h2 em {
   align-items: center;
   gap: 10px;
   margin-bottom: 26px;
-  color: var(--on-dark-muted);
+  color: var(--muted);
   font-size: 0.625rem;
 }
 .status-dot {
@@ -342,7 +345,7 @@ h2 em {
 .hero-description {
   max-width: 410px;
   margin-top: 30px;
-  color: var(--on-dark-muted);
+  color: var(--muted);
   font-size: 0.9375rem;
   line-height: 1.8;
 }
@@ -375,7 +378,7 @@ h2 em {
 }
 .hero-note {
   margin-top: 20px;
-  color: var(--on-dark-muted);
+  color: var(--muted);
   font-size: 0.6875rem;
 }
 .hero-project {
@@ -455,7 +458,7 @@ h2 em {
 }
 .caption-detail,
 .project-kind {
-  color: var(--on-dark-muted);
+  color: var(--muted);
 }
 .project-kind {
   font-size: 0.625rem;
@@ -467,14 +470,14 @@ h2 em {
   gap: 24px;
   margin-top: clamp(40px, 4vw, 60px);
   padding-block: 22px;
-  border-top: 1px solid var(--line-dark);
+  border-top: 1px solid var(--line);
 }
 .hero-footnote p {
   font-size: 0.8125rem;
-  color: var(--on-dark-muted);
+  color: var(--muted);
 }
 .hero-footnote em {
-  color: var(--on-dark);
+  color: var(--text);
   font-family: var(--display-font);
   font-size: 1.45em;
 }
@@ -482,15 +485,7 @@ h2 em {
   color: var(--lime);
   font-size: 0.75rem;
 }
-.hero :focus-visible {
-  outline-color: var(--lime);
-}
-
-/* Services: three distinct paper panels on the studio's cobalt field. */
-.services {
-  background: var(--cobalt);
-  color: var(--on-dark);
-}
+/* Services share one surface so the projects carry the strongest color. */
 .section-heading {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -506,12 +501,9 @@ h2 em {
   justify-content: space-between;
   gap: 32px;
 }
-.section-intro h2 em {
-  color: var(--lime);
-}
 .section-intro > p {
   max-width: 245px;
-  color: #e1e6fc;
+  color: var(--muted);
   font-size: 0.875rem;
 }
 .services-grid {
@@ -524,14 +516,12 @@ h2 em {
   flex-direction: column;
   min-width: 0;
   padding: 30px;
-  background: var(--paper);
-  color: var(--ink);
-}
-.service-card-featured {
-  background: var(--lime);
-}
-.service-card:last-child {
-  background: var(--lavender);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  transition:
+    background 220ms ease,
+    border-color 220ms ease;
 }
 .service-top {
   display: flex;
@@ -541,14 +531,14 @@ h2 em {
   margin-bottom: 42px;
 }
 .service-top .small-label {
-  color: #3e4c50;
+  color: var(--muted);
   font-size: 0.625rem;
 }
 .service-top svg {
   width: 42px;
   height: 42px;
   flex-shrink: 0;
-  stroke: var(--ink);
+  stroke: var(--lime);
   stroke-width: 1.4;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -562,7 +552,7 @@ h2 em {
 .service-card > p {
   margin-top: 19px;
   margin-bottom: 30px;
-  color: #435256;
+  color: var(--muted);
   font-size: 0.875rem;
 }
 .service-card ul {
@@ -571,29 +561,24 @@ h2 em {
   margin: auto 0 0;
   padding: 22px 0 0;
   list-style: none;
-  border-top: 1px solid #a8b19b;
+  border-top: 1px solid var(--line);
   font-size: 0.75rem;
 }
 .service-card li::before {
   content: "+";
   display: inline-block;
   width: 18px;
+  color: var(--lime);
   font-weight: 600;
 }
 
 /* Selected work: oversized images and numbered captions. */
-.work {
-  background: var(--paper);
-}
 .work-heading {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   gap: 36px;
   margin-bottom: 48px;
-}
-.work-heading h2 em {
-  color: var(--cobalt);
 }
 .work-heading > p {
   max-width: 310px;
@@ -611,17 +596,14 @@ h2 em {
 }
 .work-image {
   overflow: hidden;
-  padding: 18px;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
 }
 .work-image img {
   width: 100%;
   transition: transform 400ms ease;
-}
-.work-image-paper {
-  background: #e9c2ae;
-}
-.work-image-leaf {
-  background: #d6dca6;
 }
 .work-project:hover .work-image img {
   transform: scale(1.025);
@@ -640,6 +622,7 @@ h2 em {
   gap: 18px;
 }
 .work-number {
+  color: var(--lime);
   font-family: var(--display-font);
   font-size: 3.5rem;
   line-height: 0.95;
@@ -660,19 +643,11 @@ h2 em {
   font-size: 0.5625rem;
 }
 
-/* Studio and process. */
-.about {
-  --muted: #394d52;
-  --line: #a8765e;
-  background: var(--peach);
-}
+/* Studio and process keep the same palette as the rest of the page. */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(50px, 8vw, 128px);
-}
-.about h2 em {
-  color: var(--cobalt-dark);
 }
 .about-copy > p:not(.eyebrow) {
   max-width: 400px;
@@ -697,7 +672,7 @@ h2 em {
 .signature-symbol {
   width: 100px;
   height: 100px;
-  color: var(--cobalt-dark);
+  color: var(--lime);
 }
 .process-list {
   margin: 0;
@@ -716,7 +691,7 @@ h2 em {
 }
 .process-number {
   margin-top: -5px;
-  color: var(--cobalt-dark);
+  color: var(--lime);
   font-family: var(--display-font);
   font-size: 3.4rem;
   line-height: 1;
@@ -735,17 +710,8 @@ h2 em {
 }
 
 /* Testimonials stay visible together instead of relying on a carousel. */
-.testimonials {
-  --muted: var(--on-dark-muted);
-  --line: var(--line-dark);
-  background: var(--ink);
-  color: var(--on-dark);
-}
 .testimonials-heading {
   text-align: center;
-}
-.testimonials-heading h2 em {
-  color: var(--lime);
 }
 .testimonials-heading .small-note {
   margin-top: 23px;
@@ -787,7 +753,7 @@ h2 em {
   place-items: center;
   width: 43px;
   height: 43px;
-  border: 1px solid var(--line-dark);
+  border: 1px solid var(--line);
   border-radius: 50%;
   color: var(--lime);
   font-size: 0.6875rem;
@@ -805,18 +771,11 @@ h2 em {
   color: var(--muted);
   font-size: 0.6875rem;
 }
-.testimonials :focus-visible {
-  outline-color: var(--lime);
-}
-
 /* A strong closing statement and the studio wordmark. */
 .site-footer {
-  --muted: #e1e6fc;
-  --line: #7185e4;
+  position: relative;
   padding-top: var(--section-space);
   padding-bottom: 28px;
-  background: var(--cobalt);
-  color: var(--on-dark);
 }
 .contact-heading {
   display: flex;
@@ -826,9 +785,6 @@ h2 em {
 }
 .contact-heading h2 {
   font-size: clamp(3rem, 6.5vw, 6.5rem);
-}
-.contact-heading h2 em {
-  color: var(--lime);
 }
 .contact-arrow {
   display: grid;
@@ -923,10 +879,6 @@ h2 em {
   font-size: 0.6875rem;
   line-height: 1.7;
 }
-.site-footer :focus-visible {
-  outline-color: var(--lime);
-}
-
 /* The observer adds these states only when motion is appropriate. */
 [data-reveal] {
   opacity: 1;
@@ -943,6 +895,10 @@ h2 em {
 }
 
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .service-card:hover {
+    background: var(--surface-hover);
+    border-color: #6f8673;
+  }
   .hero-project:hover .project-art {
     transform: rotate(2deg) translateY(-4px);
   }
@@ -996,9 +952,6 @@ h2 em {
   .work-grid {
     gap: 28px;
   }
-  .work-image {
-    padding: 12px;
-  }
   .about-grid {
     gap: 58px;
   }
@@ -1033,7 +986,7 @@ h2 em {
     align-items: stretch;
     gap: 0;
     padding-block: 12px 20px;
-    border-top: 1px solid var(--line-dark);
+    border-top: 1px solid var(--line);
   }
   .primary-navigation a {
     justify-content: space-between;
