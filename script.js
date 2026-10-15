@@ -73,23 +73,31 @@ function initSectionTracking() {
     testimonials: "#about",
     contact: "#contact",
   };
+  const sectionIds = Object.keys(navigationForSection);
+  const visibleSections = new Set();
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const current = navigationForSection[entry.target.id];
-        links.forEach((link) => {
-          if (link.hash === current)
-            link.setAttribute("aria-current", "location");
-          else link.removeAttribute("aria-current");
-        });
+        if (entry.isIntersecting) visibleSections.add(entry.target.id);
+        else visibleSections.delete(entry.target.id);
+      });
+      // A section can stay visible while its neighbor leaves the viewport.
+      const currentId = sectionIds
+        .filter((id) => visibleSections.has(id))
+        .pop();
+      if (!currentId) return;
+      const current = navigationForSection[currentId];
+      links.forEach((link) => {
+        if (link.hash === current)
+          link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
       });
     },
     { rootMargin: "-15% 0px -55% 0px" },
   );
 
-  Object.keys(navigationForSection).forEach((id) => {
+  sectionIds.forEach((id) => {
     const section = document.getElementById(id);
     if (section) observer.observe(section);
   });
